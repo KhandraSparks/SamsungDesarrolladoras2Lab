@@ -1,0 +1,125 @@
+body{
+    /* Fonts, colors, borders: */
+    background-color: #242933;
+    font-size: 1.1vw;
+}
+
+form{
+    /* Fonts, colors, borders: */
+    font-family: 'Poppins', sans-serif;
+    border: 0.15em solid #393f55;
+    border-radius: 0.4em;
+    background-color: #2f3644;
+
+    /* Positioning, margins, sizes: */
+    margin: 5vh auto;
+    padding: 2vh 0;
+    width: 30vw;
+}
+
+h1 {
+    color: #adbbe2;
+    width: 80%;
+    margin: 3vh auto;
+    font-size: 1.6em;
+    letter-spacing: 0.04em;
+}
+
+label{
+    /* Fonts, colors, borders: */
+    color: #747d9c;
+    font-weight: bolder;
+
+    /* Positioning, margins, sizes: */
+    display: block;
+    margin: 0.5vh auto;
+    width: 80%;
+}
+
+input{
+    /* Fonts, colors, borders: */
+    border: 0.2em solid white;
+    border-radius: 0.25em;
+    
+    /* Positioning, margins, sizes: */
+    display: block;
+    box-sizing: border-box;
+    margin: 2% auto;
+    width: 80%;
+    line-height: 2vw;
+    padding: 1.5% 5%;
+    padding-left: 1.5em;
+    padding-right: 2.5em;
+}
+
+input:focus{
+    outline:none;
+}
+
+
+.inputContainer{
+    position: relative;
+}
+
+.button{
+    /* Fonts, colors, borders: */
+    background-color: #6c63ff;
+    color: white;
+    border: 0.15em solid black;
+    font-size: 1em;
+    font-weight: bold;
+
+    /* Positioning, margins, sizes: */
+    padding: 0.5em;
+    margin-top: 1vh;
+    }
+
+.button:hover{
+    border-color: white;
+    transition: 0.25s;
+}
+
+.valid{
+    border-color: rgb(77, 204, 99);
+}
+
+.notValid{
+    border-color: rgb(219, 89, 89);
+}
+
+form > div > p {/* Este estilo solo aplica a mensajes de error dentro del formulario */
+    color:rgb(219, 89, 89);
+    font-size: smaller;
+    margin: 0 auto;
+    width: 80%;
+    height: 0; /* El <p> no ocupa espacio vertical */
+}
+
+.validationIcon {
+    position: absolute;
+    left: 83%;
+    top: 3em;
+    height: 1.2em;
+}
+
+
+@media only screen and (orientation: portrait) {  /* Media query para adaptar el css a orientación portrait */
+    body {
+        font-size: 1.1vh;
+    }
+
+    form {
+        width: 30vh;
+        margin: 5vw auto;
+    }
+
+    input {
+        line-height: 2vh;
+        margin: 2% auto;
+    }
+
+    .button{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+}
