@@ -35,7 +35,8 @@ function onSubmit(){
     }
   } 
   if (valid === inputFields.length-1){
-    alert("La inscripción ha sido correcta.");
+      if(alert('Alert For your User!')){}
+        else window.location.reload();
   }
 }
 
@@ -81,7 +82,7 @@ function validateInputs(input) {
       break;
     case "passw1":
       const passw1RegEx = /^.{8,}$/;
-      errMsg = "Debe tener más de 8 caracteres";
+      errMsg = "Debe tener al menos 8 caracteres";
       validateRegEx(passw1RegEx, input, errMsg, tooltip);
       validateInputs(document.getElementById("passw2"));
       break;
