@@ -1,5 +1,5 @@
 // Generar una HtmlCollection de todos los <input>:
-let inputFields=document.getElementsByTagName('input')  
+let inputFields=document.getElementsByTagName('input');  
 
 //Llamada a la función "onInput" cuando se modifica el valor de los campos:
 for(input of inputFields){  
@@ -10,7 +10,7 @@ for(input of inputFields){
 document.getElementById("submit").addEventListener("click", onSubmit);
 
 // Constantes para SVG de error y éxito:
-const successSVG = "./images/success-icon.svg"
+const successSVG = "./images/success-icon.svg";
 const errorSVG = "./images/error-icon.svg";
 
 //----------------------------------------------------------------------//
@@ -73,7 +73,7 @@ function validateInputs(input) {
       errMsg = "Email inválido";
       //tooltip
         if(input.value.includes("@")){
-          tooltip= "La dirección \"" + input.value + "\" no es válida."
+          tooltip= "La dirección \"" + input.value + "\" no es válida.";
         }
         else{
           tooltip = "Incluye un signo \"@\" en la dirección de correo electrónico. La dirección \"" + input.value + "\" no incluye el signo \"@\".";
@@ -137,7 +137,7 @@ function validateRegEx(regExPattern, input, errMsg, tooltip) {
 // - Inserta los mensajes de error e iconos error/éxito apropiados 
 //----------------------------------------------------------------------//
 function addIconAndMsg(imgSrc, errMsg, input) {
-  const errMsgEle = document.getElementById(input.id+"ErrMsg")
+  const errMsgEle = document.getElementById(input.id+"ErrMsg");
  if(errMsgEle !== null){ 
   errMsgEle.innerHTML = errMsg;
  }
@@ -148,7 +148,7 @@ function addIconAndMsg(imgSrc, errMsg, input) {
   input.after(errMsgEle);
  }
 
-  const errImg = document.getElementById(input.id+"ErrSVG")
+  const errImg = document.getElementById(input.id+"ErrSVG");
  if(errImg !== null){ 
   errImg.src = imgSrc;
  }
