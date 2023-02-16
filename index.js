@@ -35,7 +35,7 @@ function onSubmit(){
     }
   } 
   if (valid === inputFields.length-1){
-      if(alert('La insacripción ha sido correcta')){}
+      if(alert('La inscripción ha sido correcta')){}
         else window.location.reload();
   }
 }
